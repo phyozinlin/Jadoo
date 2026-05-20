@@ -1,103 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login Form</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    body{
-      overflow: hidden;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#eef2f7] min-h-screen flex items-center justify-center font-sans">
-
-  <div class="w-[430px] bg-white rounded-[28px] shadow-2xl px-10 py-12">
-
-    <div class="flex justify-center mb-8">
-      <div class="w-16 h-16 rounded-2xl bg-[#edf2ff] flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg"
-             class="w-8 h-8 text-blue-600"
-             fill="none"
-             viewBox="0 0 24 24"
-             stroke="currentColor"
-             stroke-width="2">
-          <path stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 11c1.1 0 2 .9 2 2v2a2 2 0 11-4 0v-2c0-1.1.9-2 2-2zm6 0V8a6 6 0 10-12 0v3M5 11h14a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8a1 1 0 011-1z"/>
-        </svg>
-      </div>
-    </div>
-
-    
-    <h1 class="text-4xl font-extrabold text-center text-[#0a1633]">
-      Welcome Back
-    </h1>
-
-    <p class="text-center text-gray-500 mt-4 text-lg">
-      Enter your credentials to access your account
-    </p>
-    <form class="mt-10 space-y-7">
-      <div>
-        <label class="block text-[#0a1633] font-bold mb-3">
-          Email Address
-        </label>
-
-        <input type="email"
-               placeholder="name@company.com"
-               class="w-full h-14 px-5 rounded-xl border border-gray-200 bg-[#f7f9fc]
-                      outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200
-                      text-gray-700 placeholder:text-gray-400 transition">
-      </div>
-
-      <div>
-        <label class="block text-[#0a1633] font-bold mb-3">
-          Password
-        </label>
-
-        <input type="password"
-               placeholder="••••••••"
-               class="w-full h-14 px-5 rounded-xl border border-gray-200 bg-[#f7f9fc]
-                      outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200
-                      text-gray-700 placeholder:text-gray-400 transition">
-      </div>
-
-      <div class="flex items-center justify-between text-sm">
-
-        <label class="flex items-center gap-2 text-gray-600 cursor-pointer">
-          <input type="checkbox"
-                 class="w-4 h-4 rounded border-gray-300 text-blue-600">
-          Remember me
-        </label>
-
-        <a href=""
-           class="text-blue-600 font-semibold hover:underline">
-          Forgot password?
-        </a>
-      </div>
-      <button
-        type="submit"
-        class="w-full h-14 rounded-xl bg-blue-600 hover:bg-blue-700
-               text-white font-bold text-xl shadow-lg transition duration-300">
-
-        Log In →
-      </button>
-
-    </form>
-
-    <p class="text-center text-gray-500 mt-10">
-      Don't have an account yet?
-      <a href=""
-         class="text-blue-600 font-bold hover:underline">
-        Sign up for free
-      </a>
-    </p>
-
-  </div>
-
+<body class="bg-slate-100 w-full min-h-screen flex flex-col items-center justify-center">
+    <main class=" bg-white rounded-2xl shadow-2xl p-8 w-full sm:p-8 max-w-lg">
+        <div class="flex flex-col items-center justify-center ">
+            <img src="images/unlock.png" alt="" class="w-14 h-14 mb-4 bg-blue-100 rounded-xl p-4">
+            <h1 class="text-2xl font-extrabold mb-2 ">Welcome Back</h1>
+            <p class="text-xs text-gray-500">Enter your credentials to access your account</p>
+        </div>
+        <form action="" class="mt-8 max-w-md flex flex-col gap-4  px-2">
+            <section class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                    <label for="" class="text-xs font-medium">Email Address</label>
+                    <input type="password"
+                        class="border border-gray-300 rounded-lg p-3 bg-slate-100 text-xs font-normal"
+                        placeholder="name@company.com">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="" class="text-xs font-medium">Password</label>
+                    <input type="password"
+                        class="border border-gray-300 rounded-lg p-3 bg-slate-100 text-sm font-normal"
+                        placeholder="........">
+                </div>
+            </section>
+            <section class="flex flex-row items-center justify-between gap-6 text-xs">
+                <div class="flex  gap-2">
+                    <input type="checkbox">
+                    <p>Remember me</p>
+                </div>
+                <div>
+                    <a href="#" class="text-blue-700 font-semibold">Forget Password?</a>
+                </div>
+            </section>
+            <button class="bg-blue-500 rounded-lg p-3 text-white text-sm shadow-lg font-bold hover:bg-blue-400">Log In ➡️</button>
+        </form>
+        <div class="flex justify-center text-center mt-6">
+            <p class="text-xs text-gray-500 ">Don't have an account yet?
+            <a href="#" class="text-blue-700 text-xs font-bold">Sign up for free</a></p>
+        </div>
+    </main>
 </body>
+
 </html>
