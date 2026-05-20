@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 min-h-screen flex justify-center items-center">
+
+  <main class="bg-white w-[400px] p-2 rounded-2xl shadow-xl px-5 py-3">
+    <div class="flex justify-center">
+        <img class="w-12" src="images/user.png" alt="profile"/>
+    </div>
+
+    <h1 class="text-2xl font-bold text-center">Create Account</h1>
+    <p class="text-center text-gray-400 text-sm mt-2 mb-6">
+      Join us today! It only takes a minute.
+    </p>
+
+    <form class="grid gap-4">
+
+      <!-- Name + Email -->
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-semibold">Full Name</label>
+          <input 
+            type="text"
+            placeholder="John Doe"
+            class="text-sm w-full border p-3 rounded-lg mt-2 bg-gray-50"
+          >
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold">Email Address</label>
+          <input 
+            type="email"
+            placeholder="name@company.com"
+            class="text-sm w-full border p-3 rounded-lg mt-2 bg-gray-50"
+          >
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label class="text-sm font-semibold">Password</label>
+        <input 
+          type="password"
+          placeholder="********"
+          class="w-full border p-3 rounded-lg mt-2 bg-gray-50"
+        >
+      </div>
+
+      <!-- Confirm Password -->
+      <div>
+        <label class="text-sm font-semibold">Confirm Password</label>
+        <input 
+          type="password"
+          placeholder="********"
+          class="w-full border p-3 rounded-lg mt-2 bg-gray-50"
+        >
+      </div>
+
+      <div class="flex items-center gap-2">
+        <input type="checkbox" class="cursor-pointer">
+        <p class="text-sm text-gray-500">
+          I agree to 
+          <a href="#" class="text-indigo-600 underline">Terms of Service</a>
+          and 
+          <a href="#" class="text-indigo-600 underline">Privacy Policy</a>
+        </p>
+      </div>
+
+      <!-- Button -->
+      <button class="bg-indigo-600 text-white p-3 rounded-lg mt-2 font-bold hover:bg-indigo-700">
+        Create My Account  >>
+      </button>
+
+      <!-- Sign in -->
+      <p class="text-center text-sm text-gray-400 mt-3">
+        Already have an account?
+        <span class="text-indigo-600 font-semibold cursor-pointer">
+          <a href="login.html">Sign in here</a>
+        </span>
+      </p>
+
+    </form>
+  </main>
+
+</body>
+</html>
